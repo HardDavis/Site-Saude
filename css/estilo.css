@@ -10,13 +10,6 @@
     font-weight: 650;
 }
 
-
-body {
-    background-image: linear-gradient(#ffff 20%,#d4d3d3 80%);
-    background-size: 1280px 720px;
-    background-repeat: no-repeat;
-  }
-  
 .botaoMenu {
     color: black;
     font-size: 27px;
@@ -27,6 +20,11 @@ body {
 
 .botaoMenu:hover {
     color: #092b9a;
+}
+
+#background {
+    height: 1380px;
+    width: 1900px;
 }
 
 #menu {
