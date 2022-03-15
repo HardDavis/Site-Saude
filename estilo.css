@@ -1,0 +1,72 @@
+
+.fontePadrao {
+    color:black;
+    font-family: Gilroy;
+    font-weight: 200;  
+}
+
+.azulPrincipal {
+    color: #092b9a;
+    font-weight: 650;
+}
+
+
+body {
+    background-image: linear-gradient(#ffff 20%,#d4d3d3 80%);
+    background-size: 1280px 720px;
+    background-repeat: no-repeat;
+  }
+  
+.botaoMenu {
+    color: black;
+    font-size: 27px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+}
+
+.botaoMenu:hover {
+    color: #092b9a;
+}
+
+#menu {
+    position: absolute;
+    left: 160px;
+    top: 50px;
+    font-weight: 400;
+}
+
+#logo {
+    position: absolute;
+    left: 5px;
+    top: -5px;
+}
+
+#health {
+    position: relative;
+    top: 5px;
+    left: -15px;
+}
+
+
+#slogan {
+    font-size: 60px;
+    margin-left: 25px;
+    position: absolute;
+    top: 80px;
+}
+
+#nossaMissao {
+    font-weight: 800;
+    font-size: 35px;
+}
+
+#missao {
+    position: absolute;
+    bottom: 65px;
+    margin-left: 25px;
+}
+
+
+
+ 
