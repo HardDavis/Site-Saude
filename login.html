@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="LOGO.png">
+    <link rel="sylesheet" href="css/styleLogin.css">
+    <title>Health+ - Login</title>
+  
+</head>
+<body>
+    <div>
+          
+        <input type="number" placeholder="Informe sua altura" id="altura">
+        <input type="number" placeholder="Informe seu peso" id="idade">
+        <button class="button2" onclick="imc()">enviar</button>
+        <div id="res">
+            
+            
+             </div> 
+       
+         <script>
+
+           function imc(){
+               var altura = document.getElementById('altura').value;
+               var idade = document.getElementById('idade').value;
+               var imc;
+               altura = altura*altura;
+               imc = idade/altura;     
+               document.getElementById('res').innerHTML="seu IMC é: "+imc;
+               
+           }
+         </script>
+     </div>
+
+</body>
+</html>
