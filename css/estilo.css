@@ -1,3 +1,8 @@
+body {
+    background-image: url("../imagens/background.png");
+    background-size: 100% 175%;
+    background-repeat: no-repeat;
+}
 
 .fontePadrao {
     color:black;
@@ -22,11 +27,6 @@
     color: #092b9a;
 }
 
-#background {
-    height: 1380px;
-    width: 1900px;
-}
-
 #menu {
     position: absolute;
     left: 160px;
@@ -46,12 +46,14 @@
     left: -15px;
 }
 
+#estatua {
+    align-items: right;
+}
 
 #slogan {
-    font-size: 60px;
+    font-size: 75px;
     margin-left: 25px;
-    position: absolute;
-    top: 80px;
+    margin-top: 35px;
 }
 
 #nossaMissao {
@@ -60,8 +62,8 @@
 }
 
 #missao {
-    position: absolute;
-    bottom: 65px;
+    font-size: 20px;
+    margin-top: 45px;
     margin-left: 25px;
 }
 
