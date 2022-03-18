@@ -1,5 +1,5 @@
 body {
-    background-image: url("../imagens/background login.png");
+    background-image: url("../Imagens/backgroundLogin.png");
     position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,11 +17,12 @@ body {
 }
 
 .padraoCaixa {
+    color:#ffffff;
+    font-weight: 170;
     font-size: 15px;
     border: 0;
     border-radius: 12px;
     padding: 15px 2px;
-    box-shadow: none;
 }
 
 #login {
