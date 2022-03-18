@@ -1,7 +1,7 @@
 
 body{
     position: fixed;
-    background-image: url("../imagens/backgroundv2.png");
+    background-image: url("../imagens/background.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -36,43 +36,45 @@ body{
 
 #tabela {
     position: relative;
-    right: -1050px;
-    top: -170px;
+    right: -1150px;
+    top: -50px;
     font-weight: 400;
+    font-size: 16px;
 }
 
 #login {
     position: relative;
-    right: -1100px;
-    top: -170px;
+    right: -990px;
+    top: -50px;
     font-weight: 400;
+    font-size: 16px;
 }
 
 #logo {
-    margin-top: -20px;
-    margin-left: 50px;
-    width: 15em;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 10em;
 }
 
 #slogan {
-    font-size: 70px;
+    font-size: 55px;
     margin-left: 25px;
-    margin-top: -50px;
+    margin-top: 150px;
 }
     
 #nossaMissao {
     font-weight: 800;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 #missao {
-    font-size: 20px;
-    margin-top: 45px;
+    font-size: 14px;
+    margin-top: 3px;
     margin-left: 25px;
 }
 
 #estatua {
     position: absolute;
-    margin-top: 100px;
-    margin-left: 700px;
+    margin-top: 125px;
+    margin-left: 710px;
 }
