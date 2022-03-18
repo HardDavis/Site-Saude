@@ -4,36 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/reset.css">
 
-    <link rel="shortcut icon" type="imagex/png" href="LOGO.png">
-    <link rel="sylesheet" href="css/styleLogin.css">
+    <script scr="../javascript/cpf.js"></script>
     <title>Health+ - Login</title>
-  
 </head>
+
+<style>
+    @font-face {
+        font-family: 'Gilroy';
+        src: url('Gilroy-Light.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Gilroy Bold';
+        src: url('Gilroy-ExtraBold.otf') format('opentype');
+    }
+    
+    .fontePadraoBold {
+    font-family: 'Gilroy Bold', times, sans-serif;
+    }
+    
+    .fontePadrao{
+    font-family: 'Gilroy', times, sans-serif;
+    }
+</style>
+
 <body>
+    <main>
     <div>
-          
-        <input type="number" placeholder="Informe sua altura" id="altura">
-        <input type="number" placeholder="Informe seu peso" id="idade">
-        <button class="button2" onclick="imc()">enviar</button>
-        <div id="res">
-            
-            
-             </div> 
-       
-         <script>
-
-           function imc(){
-               var altura = document.getElementById('altura').value;
-               var idade = document.getElementById('idade').value;
-               var imc;
-               altura = altura*altura;
-               imc = idade/altura;     
-               document.getElementById('res').innerHTML="seu IMC é: "+imc;
-               
-           }
-         </script>
-     </div>
-
+        <h1 class="fontePadraoBold" id="login">Login</h1>
+    </div>
+    
+    <form>
+       <div>
+         <input class="padraoCaixa" class="fontePadrao" type="text" placeholder="Nome" id="nome">
+         <input class="padraoCaixa" class="fontePadrao" type="text" placeholder="Sobrenome" id="sobrenome">
+       </div>
+       <div>
+         <input class="padraoCaixa" class="fontePadrao" type="email" placeholder="Email" id="email">
+       </div>
+       <div>
+         <input class="padraoCaixa" class="fontePadrao" type="date" placeholder="Data de nascimento" id="dataNasc">
+       </div>
+       <div>
+         <select class="padraoCaixa" class="fontePadrao" id="sexo">
+            <option selected disable value="">Informe seu sexo</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Outro</option>
+       </select>   
+       </div> 
+       <div>
+           <input class="padraoCaixa" class="fontePadrao" id="endereco" type="text" placeholder="Endereço">
+        </div>  
+        <div>
+        <input class="padraoCaixa" class="fontePadrao" id="cep" type="number" placeholder="Escreva o cep">
+        </div>
+        <div>
+        <input class="padraoCaixa" class="fontePadrao" id="cidade" type="text" placeholder="Escreva o nome da cidade">
+        </div>
+        <div>
+        <select class="padraoCaixa" class="fontePadrao" id="estado">
+            <option selected disabled value="">Selecione seu estado</option>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Distrito Federal</option>
+            <option>Espírito Santo</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Minas Gerais</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Paraná</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>São Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+        </select>
+        </div>
+           
+      <div>
+        <input class="padraoCaixa" class="fontePadrao" id="cpf" type="text" placeholder="Digite seu cpf"  maxlength="14">
+        
+      </div>
+    
+      <div>
+        <button type="submit" id="botao">Continuar</button>
+      </div>
+    </form>
+    </main>
 </body>
 </html>

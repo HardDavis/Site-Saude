@@ -1,4 +1,85 @@
-table,th,td{
-    border: 1px solid black;
-    border-collapse: collapse;
+body {
+    background-image: url("../imagens/background login.png");
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.fontePadrao {
+    color:#ffffff;
+    font-weight: 170;
+}
+
+.fontePadraoBold {
+    color: #ffffff;
+    font-weight: 650;
+}
+
+.padraoCaixa {
+    font-size: 15px;
+    border: 0;
+    border-radius: 12px;
+    padding: 15px 2px;
+    box-shadow: none;
+}
+
+#login {
+    position: fixed;
+    font-size: 75px;
+    margin-left: 740px;
+    margin-top: 140px;
+}
+
+#nome {
+    position: absolute;
+    margin-left: 720px;
+    margin-top: 250px;
+    background-image: linear-gradient(to bottom right, #9f56cb, #f988e7);
+}
+
+#sobrenome {
+    position: absolute;
+    margin-left: 920px;
+    margin-top: 250px;
+}
+
+#dataNasc {
+
+}
+
+#email {
+
+}
+
+#email {
+
+}
+
+#sexo {
+
+}
+
+#endereco {
+
+}
+
+#cep {
+
+}
+
+#cidade {
+
+}
+
+#estado {
+
+}
+
+#cpf {
+
+}
+
+#botao {
+
 }

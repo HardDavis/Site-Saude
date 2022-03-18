@@ -6,6 +6,9 @@ body{
     background-repeat: no-repeat;
 }
 
+header .container {
+    width: 100%;
+}
 .fontePadrao {
     color:#ffffff;
     font-weight: 170;
@@ -44,7 +47,7 @@ body{
 
 #login {
     position: relative;
-    right: -990px;
+    right: -1010px;
     top: -50px;
     font-weight: 400;
     font-size: 16px;
@@ -76,5 +79,5 @@ body{
 #estatua {
     position: absolute;
     margin-top: 125px;
-    margin-left: 710px;
+    margin-left: 610px;
 }
