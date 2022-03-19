@@ -8,15 +8,17 @@
     <link rel="shortcut icon" type="imagex/png" href="LOGO.png">
     <link rel="sylesheet" href="css/styleLogin.css">
     <title>Health+ - Login</title>
-  
 </head>
 <body>
+    <script src="js/texto_sozinho.js" defer></script>
+    <div id="text"></div>
+
+    
     <div>
         <input type="number" placeholder="Informe sua altura" id="altura">
         <input type="number" placeholder="Informe seu peso" id="idade">
         <button class="button2" onclick="imc()">enviar</button>
 
-        
         <div id="res">
             
 
@@ -33,14 +35,7 @@
                imc = idade/altura;     
                document.getElementById('res').innerHTML="seu IMC é: "+imc;   
            }
-           function cpf() {
-           var copia = document.getElementById('CPF').value;
-           if(copia.value.lenght==3 || cpf.vaue.lenght == 7){
-               copia.value += "."
-           }if (copia.value.lenght==10){
-               copia.value += "-"
-           }
-           }
+           
            
          </script>
      </div>

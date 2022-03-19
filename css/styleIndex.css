@@ -1,6 +1,5 @@
 
 body{
-    position: fixed;
     background-image: url("../imagens/background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,17 +20,11 @@ body{
     font-size: 27px;
     text-decoration: none;
     width: 100px;
+    
 }
 
 .botaoNav:hover {
     color: #60a2d8;
-}
-
-#menu {
-    position: relative;
-    right: -1000px;
-    top: -170px;
-    font-weight: 400;
 }
 
 #tabela {
@@ -40,6 +33,8 @@ body{
     top: -50px;
     font-weight: 400;
     font-size: 16px;
+    width: 90%;
+    max-width: 100px;
 }
 
 #login {
@@ -54,6 +49,19 @@ body{
     margin-top: 10px;
     margin-left: 25px;
     width: 10em;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+    transition: width .2s;
+    transition-delay: .1s;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
 }
 
 #slogan {

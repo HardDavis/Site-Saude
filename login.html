@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="CSS/styleLogin.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="shortcut icon" type="Imagens/png" href="Imagens/icone.png">
-
-    
     <title>Health+ - Login</title>
 </head>
 
@@ -38,6 +36,7 @@
     <main>
     <div>
         <h1 class="fontePadraoBold" id="login">Login</h1>
+
     </div>
     
     <form>
@@ -63,7 +62,18 @@
            <input class="padraoCaixa" id="endereco" type="text" placeholder="Endereço">
         </div>  
         <div>
-        <input class="padraoCaixa" id="cep" type="number" placeholder="Escreva o cep">
+        <input class="padraoCaixa" id="cep" onkeypress="CEP()" type="text" placeholder="Escreva o cep" maxlength="10">
+        <script>
+
+          function CEP() {
+              const cep = document.getElementById('cep');
+              if(cep.value.length == 6) {
+                cep.value += "-";
+              }
+              
+              }   
+
+        </script>
         </div>
         <div>
         <input class="padraoCaixa" id="cidade" type="text" placeholder="Escreva o nome da cidade">
@@ -99,15 +109,33 @@
             <option>Tocantins</option>
         </select>
         </div>
-           
+
       <div>
-        <input class="padraoCaixa" id="cpf" type="text" placeholder="Digite seu cpf"  maxlength="14">
+        <input class="padraoCaixa" id="cpf" onkeypress="danone()" onkeypress="numb()" type="number" placeholder="Digite seu cpf"  maxlength="15" >
+
+        <script>
+            
+          function danone() {
+            const copia = document.getElementById('cpf');
+             for(var i=1; i<14; i++){
+
+              if(copia.value.length == 3 || copia.value.length == 7) {
+                document.getElementById('cpf').type="text";
+                copia.value += ".";
+              }else if(copia.value.length == 11){
+                document.getElementById('cpf').type="text";
+                copia.value += "-";  
+              }
+             }
+          }
+        </script>
+        
         
       </div>
+      
+      <button type="submit" id="botao">Continuar</button>
     
-      <div>
-        <button type="submit" id="botao">Continuar</button>
-      </div>
+      
     </form>
     </main>
 </body>
