@@ -62,6 +62,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 1vh;
+    overflow: hidden; 
 
     animation-name: sla;
     animation-duration: 20s;
@@ -224,14 +225,14 @@ main {
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('/FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Gilroy Bold';
-    src: url('/FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
     font-style: normal;
 }
 
