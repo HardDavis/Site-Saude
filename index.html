@@ -11,67 +11,50 @@
     <title>Health+ - Consulte seu peso!</title>
 </head> 
 
-<style>
-  
-  @font-face {
-        font-family: 'Gilroy';
-        src: url('/FontesDeTexto/Gilroy-Light.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-}
+<body>
+    <div class="gridContainer">
 
-    @font-face {
-        font-family: 'Gilroy Bold';
-        src: url('/FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
-}
-
-.fontePadraoBold {
-    font-family: 'Gilroy Bold', times, sans-serif;
-}
-
-.fontePadrao{
-    font-family: 'Gilroy', times, sans-serif;
-}
-
-.botaoNav {
-    font-family: 'Gilroy', times, sans-serif;
-}
-
-</style> 
-   
-    <body>
-        
-        <header>
-            <div class="container">
+    <header class="header">
+        <a href="./oldIndex.html">
+             <img id="logo" src="Imagens/logo.png" alt="Logo">
+        </a>
+             <nav class="menu">
+                <ul>
+                    <li><a href="https://google.com">Sobre IMC</a></li>
+                    <li><a href="./oldLogin.html">Login</a></li>
+                </ul>
+            </nav>
+    </header>
+    
+    <main>
+        <div class="parMissao">
+            <h1 class="fonteBold">
+                Nossa Missão:
+            </h1>
             <div>
-                <img id="estatua" src="Imagens/statuetorso.png" width="530px">
-                <a href="./newIndex.html">
-                    <img id="logo" src="Imagens/logo.png" alt="Logo">
-               </a>
+                <p>
+                 Lorem ipsum dolor sit amet,<br>
+                 consectetur adipiscing elit. Mauris<br>
+                 lacus sapien, dictum vel tincidunt<br>
+                 eget, vehicula at justo. In interdum<br>
+                 condimentum turpis, sit amet sollic<br>
+                 fitudin lectus semper nec. Mauris<br> 
+                 pulvinar metus nunc, mattis<br>
+                 consequat arcu auctor nec. Nunc<br>
+                 suscipit blandit sem.
+                </p>
             </div>
-            <div>
-                <a class="botaoNav" id="tabela" href="teste.html">Tabela</a> 
-                <a class="botaoNav" id="login" href="login.html">Login</a>
-            </div>
-            </div>
-        </header>
-        <main>
-            <div>
-                <h2 class="fontePadrao" id="slogan">
-                    Seu peso não é <br> 
-                    apenas um número, <br> 
-                    é sua <span class="fontePadraoBold">Sáude!</span>
-                </h2>
-            </div>
+        </div>
+    </main>
 
-            <div class="fontePadrao" id="missao">
-            <p><span id="nossaMissao">Nossa Missão!</span><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                Mauris lacus sapien, dictum vel tincidunt eget, vehicula<br>
-                at justo. In interdum condimentum turpis, sit amet sollic<br>
-                fitudin lectus semper nec. Mauris pulvinar metus nunc,<br>
-                mattis consequat arcu auctor nec. Nunc suscipit blandit sem.</p>
-             </div> 
-        </main>
-    </body>
-</html>
+    <div class="estatua">
+        <div class="slogan">
+            <h3>SEU PESO,</h3><br>  
+            <h2>É sua</h2><br>
+            <p class="fonteBold">SAÚDE</p>
+        </div>
+        <img  id="torso" src="Imagens/torso2.0.png"  width="1200px">
+    </div>
+
+    </div>
+</body>
