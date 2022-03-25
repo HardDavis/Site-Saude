@@ -117,17 +117,28 @@
             
           function danone() {
             const copia = document.getElementById('cpf');
-             for(var i=1; i<14; i++){
 
-              if(copia.value.length == 3 || copia.value.length == 7) {
+              if(copia.value.length == 3 ) {
                 document.getElementById('cpf').type="text";
                 copia.value += ".";
-              }else if(copia.value.length == 11){
+                }
+                else if(copia.value.length == 4){
+                document.getElementById('cpf').type="number";
+                }
+                else if(copia.value.length == 7){
                 document.getElementById('cpf').type="text";
-                copia.value += "-";  
+                }
+                else if(copia.value.length == 8){
+                document.getElementById('cpf').type="number";
+                }
+                else if(copia.value.length == 11){
+                document.getElementById('cpf').type="text";
+                copia.value += "-";
+                }
+                else if(copia.value.length == 12){
+                  document.getElementById('cpf').type="number";
+                }
               }
-             }
-          }
         </script>
         
         

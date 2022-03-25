@@ -57,6 +57,23 @@
     }
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    
+    50% {
+        transform: translateY(-30px);
+    }
+
+    
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
 body{
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,6 +140,11 @@ main {
     grid-area: i;
 }
 
+#saude {
+    transform: translateY(0px);
+    animation: float 6ms ease-in-out infinite;
+    animation-duration: 3930ms;
+}
 
 #torso {
     position: absolute;

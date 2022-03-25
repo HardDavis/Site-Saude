@@ -1,0 +1,153 @@
+@keyframes sla {
+
+    0% {
+        background-image: url(../Imagens/background365.png);
+    }
+    33% {
+        background-image: url(../Imagens/background247.png);
+    }
+    66% {
+        background-image: url(../Imagens/background492.png);
+    }
+    100% {
+        background-image: url(../Imagens/background365.png);
+    }
+
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1vh;
+    overflow: hidden; 
+
+    animation-name: sla;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    font-family: 'Gilroy', times, sans-serif;
+    color: #fff;
+}
+
+.fonteBold{
+    font-family: 'Gilroy Bold', times, sans-serif;
+    color: #fff;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+
+    transition: width 300ms;
+    transition-delay: 100ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+.conteudo h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 180px;
+    
+}
+
+.conteudo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.conteudo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.botao a{
+    position: absolute;
+    margin-left: 525px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px 40px;
+    border: 4px solid #fff;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.botao a:hover {
+    border-color: blueviolet;
+    color: blueviolet;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+    font-style: normal;
+}
+
+
+
+
+
+@media (max-height: 1080px) {
+    body {
+        padding-bottom: 95.3vh;
+    }
+}
+
+@media (max-height: 920px) {
+    body {
+        padding-bottom: 94.5vh;
+    }
+}
+
+@media (max-height: 768px) {
+    body {
+        padding-bottom: 99vh;
+    }
+}
+
+@media (max-width: 794px) {
+    body {
+        padding-bottom: 200vh;
+    }
+}
+
+@media (max-width: 404px) {
+    body {
+        padding-bottom: 250vh;
+    }
+}  
