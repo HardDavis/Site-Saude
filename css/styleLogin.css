@@ -1,0 +1,94 @@
+@keyframes sla {
+
+    0% {
+        background-image: url(../Imagens/background365.png);
+    }
+    33% {
+        background-image: url(../Imagens/background247.png);
+    }
+    66% {
+        background-image: url(../Imagens/background492.png);
+    }
+    100% {
+        background-image: url(../Imagens/background365.png);
+    }
+
+}
+
+
+
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; 
+
+    animation-name: sla;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body{
+    font-family: 'Gilroy', times, sans-serif;
+    color: #fff;
+}
+
+.fonteBold {
+    font-family: 'Gilroy Bold', times, sans-serif;
+}
+
+.padraoCaixa {
+    color:#000000;
+    font-weight: 170;
+    font-size: 15px;
+    border: 0;
+    border-radius: 12px;
+    padding: 15px 2px;
+}
+
+#logo {
+    width: 120px;
+    margin-left: 25px;
+    margin-top: 12px;
+
+    transition: width 300ms;
+    transition-delay: 100ms;
+}
+
+#logo:hover {
+    cursor: pointer;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../FontesDeTexto/Gilroy-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
+}
+
+
+
+
+

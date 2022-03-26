@@ -78,7 +78,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1vh;
+    height: 100vh;
     overflow: hidden; 
 
     animation-name: sla;
@@ -262,32 +262,3 @@ main {
 
 
 
-@media (max-height: 1080px) {
-    body {
-        padding-bottom: 95.3vh;
-    }
-}
-
-@media (max-height: 920px) {
-    body {
-        padding-bottom: 94.5vh;
-    }
-}
-
-@media (max-height: 768px) {
-    body {
-        padding-bottom: 99vh;
-    }
-}
-
-@media (max-width: 794px) {
-    body {
-        padding-bottom: 200vh;
-    }
-}
-
-@media (max-width: 404px) {
-    body {
-        padding-bottom: 250vh;
-    }
-}  
