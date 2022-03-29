@@ -1,16 +1,16 @@
 @keyframes sla {
 
     0% {
-        background-image: url(../Imagens/background365.png);
+        background-image: url(../Imagens/Backgroundtabela.png);
     }
     33% {
-        background-image: url(../Imagens/background247.png);
+        background-image: url(../Imagens/Backgroundtabela2.png);
     }
     66% {
-        background-image: url(../Imagens/background492.png);
+        background-image: url(../Imagens/Backgroundtabela3.png);
     }
     100% {
-        background-image: url(../Imagens/background365.png);
+        background-image: url(../Imagens/Backgroundtabela.png);
     }
 
 }
@@ -36,22 +36,19 @@ body{
     animation-name: sla;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    justify-content: center;
-    align-items: center;
 }
 
-html, body {
-    font-family: 'Gilroy', times, sans-serif;
+html, body{
     color: #fff;
+    font-family: 'Gilroy', times, sans-serif;
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 50vh 10vh;
+    grid-template-rows: 10vh 45vh;
     grid-template-areas: "h"
-                         "h1"
-                         "c"
+                         "a"
                          "b";
     gap: 5px;
 }
@@ -67,21 +64,41 @@ header {
 }
 
 
-#h1 {
-    grid-area: h1;
+
+.titul {
+    margin-top: 10vh;
 }
 
-.conteudo {
-    grid-area: c;
+.entry {
+    margin-top: 5vh;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 18px;
 }
 
-.botao {
-    grid-area: b;
-}
-
-.fonteBold{
-    font-family: 'Gilroy Bold', times, sans-serif;
+.button {
+    background-color: transparent;
     color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 8px 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-color: rgba(255, 255, 255, 0.616);
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.padraoCaixa {
+    color:#000000;
+    font-weight: 170;
+    font-size: 15px;
+    text-align: center;
+    border: 0;
+    border-radius: 25px;
+    padding: 8px 2px;
 }
 
 .menu {
@@ -92,6 +109,7 @@ header {
 
 .menu ul {
     list-style: none;
+    
 }
 
 .menu a {
@@ -125,59 +143,32 @@ header {
     transition-delay: 100ms;
 }
 
+h1 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #logo:hover {
     cursor: pointer;
     width: 150px;
 }
 
-.conteudo h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5vh;
-    font-size: 180px;
-}
 
-.conteudo h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
 
-    grid-area: h2;
-}
 
-.conteudo p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
 
-.botao a{
-    position: absolute;
-    margin-left: 40vw;
-    margin-top: 20px;
-    background-color: transparent;
-    border-radius: 50px;
-    padding: 10px 40px;
-    border: 4px solid #fff;
 
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    
-    box-shadow: none;
-    text-shadow: none;
-}
 
-.botao a:hover {
-    border-color: rgb(252, 3, 77);
-    color: rgb(252, 3, 77);
-}
+
+
+
 
 
 
@@ -195,9 +186,3 @@ header {
     src: url('../FontesDeTexto/Gilroy-ExtraBold.otf') format('opentype');
     font-style: normal;
 }
-
-
-
-
-
- 
